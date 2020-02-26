@@ -1,0 +1,797 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1703 ]
+[d frameptr 6 ]
+"77 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[e E2110 mtouch_sensor_names `uc
+Sensor_AN5 0
+]
+"145
+[e E2112 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+MTOUCH_SENSOR_ERROR_tooManyRetries -4
+MTOUCH_SENSOR_ERROR_scanOverrun -5
+MTOUCH_SENSOR_ERROR_interruptedScan -6
+]
+"74 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[e E2327 mtouch_button_names `uc
+Button0 0
+]
+[e E2261 mtouch_sensor_names `uc
+Sensor_AN5 0
+]
+[e E2376 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressed 2
+]
+"75 C:\Users\zhgao\MPLABXProjects\mbutton.X\main.c
+[e E2179 mtouch_button_names `uc
+Button0 0
+]
+"1 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+[v i1_abs abs `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"50 C:\Users\zhgao\MPLABXProjects\mbutton.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"52 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"49 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+"63
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+"130 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"141
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"148
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"160
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"179
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"211
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"234
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"238
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"277
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+"296
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"341
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"357
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"363
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"385
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
+"397
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"112 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"127
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"143
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(v  1 e 1 0 ]
+"154
+[v _Sensor_Service Sensor_Service `(E2112  1 s 1 Sensor_Service ]
+"187
+[v _Sensor_Acquisition Sensor_Acquisition `(E2112  1 s 1 Sensor_Acquisition ]
+"221
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2112  1 s 1 Sensor_Acq_ExecutePacket ]
+"285
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+"335
+[v _Sensor_Scanfrequency_Evaluation Sensor_Scanfrequency_Evaluation `(E2112  1 s 1 Sensor_Scanfrequency_Evaluation ]
+"392
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+"399
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"419
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"444
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"468
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+"473
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+"486
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+"504
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"509
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+"515
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"520
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"62 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+"131
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+"57 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"87
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+"93
+[v _TMR2_StopTimer TMR2_StopTimer `(v  1 e 1 0 ]
+"114
+[v _TMR2_LoadPeriodRegister TMR2_LoadPeriodRegister `(v  1 e 1 0 ]
+"119
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"132
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"136
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S50 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1703.h
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S64 . 1 `S50 1 . 1 0 `S59 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES64  1 e 1 @11 ]
+[s S108 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"549
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIF 1 0 :1:2 
+]
+[u S119 . 1 `S108 1 . 1 0 `S116 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES119  1 e 1 @17 ]
+"846
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"866
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"886
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S259 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"907
+[s S263 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S271 . 1 `S259 1 . 1 0 `S263 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES271  1 e 1 @28 ]
+"957
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1002
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S409 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"1017
+[u S416 . 1 `S409 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES416  1 e 1 @142 ]
+[s S82 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1072
+[s S90 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIE 1 0 :1:2 
+]
+[u S93 . 1 `S82 1 . 1 0 `S90 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES93  1 e 1 @145 ]
+[s S173 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1183
+[s S180 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S187 . 1 `S173 1 . 1 0 `S180 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES187  1 e 1 @149 ]
+"1300
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1359
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1417
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1489
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"1551
+[v _ADRES ADRES `VEus  1 e 2 @155 ]
+"1598
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"1678
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1731
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"1779
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1824
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S1006 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"1839
+[u S1013 . 1 `S1006 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1013  1 e 1 @270 ]
+"1874
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2029
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2068
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+[s S392 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+]
+"2083
+[u S399 . 1 `S392 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES399  1 e 1 @398 ]
+"2309
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"2359
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+[s S375 . 1 `uc 1 WPUC0 1 0 :1:0 
+`uc 1 WPUC1 1 0 :1:1 
+`uc 1 WPUC2 1 0 :1:2 
+`uc 1 WPUC3 1 0 :1:3 
+`uc 1 WPUC4 1 0 :1:4 
+`uc 1 WPUC5 1 0 :1:5 
+]
+"2374
+[u S382 . 1 `S375 1 . 1 0 ]
+[v _WPUCbits WPUCbits `VES382  1 e 1 @526 ]
+"3807
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"3852
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"5928
+[v _GIE GIE `VEb  1 e 0 @95 ]
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"74 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button mtouch_button `[1]S750  1 s 16 mtouch_button ]
+"107
+[v _callback_pressed callback_pressed `*.37(v  1 s 2 callback_pressed ]
+"108
+[v _callback_notPressed callback_notPressed `*.37(v  1 s 2 callback_notPressed ]
+"116
+[v _Button_StateMachine Button_StateMachine `[3]*.37(v  1 e 6 0 ]
+"77 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _callback_sampled callback_sampled `*.37(v  1 s 2 callback_sampled ]
+[s S351 . 1 `uc 1 packet_done 1 0 :1:0 
+`uc 1 interrupted 1 0 :1:1 
+]
+"84
+[v _sensor_globalFlags sensor_globalFlags `VES351  1 s 1 sensor_globalFlags ]
+"85
+[v _currentScannSensor currentScannSensor `E2110  1 s 1 currentScannSensor ]
+"86
+[v _packet_counter packet_counter `uc  1 s 1 packet_counter ]
+"87
+[v _packet_sample packet_sample `us  1 s 2 packet_sample ]
+"88
+[v _sample_period sample_period `uc  1 s 1 sample_period ]
+"89
+[v _packet_noise packet_noise `us  1 s 2 packet_noise ]
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+"97
+[v _mtouch_sensor mtouch_sensor `[1]S358  1 e 9 0 ]
+"58 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"50 C:\Users\zhgao\MPLABXProjects\mbutton.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"82
+} 0
+"50 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"64 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"57 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"96
+} 0
+"60 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"49 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"112 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+{
+"119
+} 0
+"444
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Enable@sensor sensor `E2110  1 a 1 wreg ]
+[v MTOUCH_Sensor_Enable@sensor sensor `E2110  1 a 1 wreg ]
+"447
+[v MTOUCH_Sensor_Enable@sensor sensor `E2110  1 a 1 5 ]
+"448
+} 0
+"130 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+{
+"133
+} 0
+"63 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+{
+"69
+} 0
+"504 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+"507
+} 0
+"515
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S358  1 a 1 wreg ]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S358  1 a 1 wreg ]
+"517
+"515
+[v Sensor_Sampled_Reset@sensor sensor `*.4S358  1 a 1 0 ]
+"518
+} 0
+"143
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(v  1 e 1 0 ]
+{
+"146
+} 0
+"154
+[v _Sensor_Service Sensor_Service `(E2112  1 s 1 Sensor_Service ]
+{
+[v Sensor_Service@name name `E2110  1 a 1 wreg ]
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+"156
+[v Sensor_Service@sensor sensor `*.4S358  1 a 1 28 ]
+"157
+[v Sensor_Service@error error `E2112  1 a 1 26 ]
+"154
+[v Sensor_Service@name name `E2110  1 a 1 wreg ]
+"156
+[v Sensor_Service@name name `E2110  1 a 1 27 ]
+"174
+} 0
+"520
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setSampled@sensor sensor `*.4S358  1 a 1 wreg ]
+[v Sensor_setSampled@sensor sensor `*.4S358  1 a 1 wreg ]
+"522
+"520
+[v Sensor_setSampled@sensor sensor `*.4S358  1 a 1 0 ]
+"523
+} 0
+"399
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_RawSample_Update@sensor sensor `*.4S358  1 a 1 wreg ]
+[v Sensor_RawSample_Update@sensor sensor `*.4S358  1 a 1 wreg ]
+"401
+"399
+[v Sensor_RawSample_Update@sensor sensor `*.4S358  1 a 1 0 ]
+"411
+} 0
+"419
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+[v Sensor_DefaultCallback@sensor sensor `E2110  1 p 1 0 ]
+} 0
+"187
+[v _Sensor_Acquisition Sensor_Acquisition `(E2112  1 s 1 Sensor_Acquisition ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Acquisition@sensor sensor `*.4S358  1 a 1 wreg ]
+"190
+[v Sensor_Acquisition@retry retry `uc  1 a 1 22 ]
+"187
+[v Sensor_Acquisition@sensor sensor `*.4S358  1 a 1 wreg ]
+"190
+"187
+[v Sensor_Acquisition@sensor sensor `*.4S358  1 a 1 23 ]
+"213
+} 0
+"1 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 0 ]
+"4
+} 0
+"473 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setInactive@sensor sensor `*.4S358  1 a 1 wreg ]
+[v Sensor_setInactive@sensor sensor `*.4S358  1 a 1 wreg ]
+"475
+"473
+[v Sensor_setInactive@sensor sensor `*.4S358  1 a 1 0 ]
+"476
+} 0
+"468
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setActive@sensor sensor `*.4S358  1 a 1 wreg ]
+[v Sensor_setActive@sensor sensor `*.4S358  1 a 1 wreg ]
+"470
+"468
+[v Sensor_setActive@sensor sensor `*.4S358  1 a 1 0 ]
+"471
+} 0
+"335
+[v _Sensor_Scanfrequency_Evaluation Sensor_Scanfrequency_Evaluation `(E2112  1 s 1 Sensor_Scanfrequency_Evaluation ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Scanfrequency_Evaluation@sensor sensor `*.4S358  1 a 1 wreg ]
+"341
+[v Sensor_Scanfrequency_Evaluation@best_packet_sample best_packet_sample `us  1 a 2 12 ]
+"339
+[v Sensor_Scanfrequency_Evaluation@packet_noise_Max packet_noise_Max `us  1 a 2 10 ]
+"337
+[v Sensor_Scanfrequency_Evaluation@i i `uc  1 a 1 17 ]
+"342
+[v Sensor_Scanfrequency_Evaluation@retry retry `uc  1 a 1 16 ]
+"340
+[v Sensor_Scanfrequency_Evaluation@best_sample_period best_sample_period `uc  1 a 1 15 ]
+"335
+[v Sensor_Scanfrequency_Evaluation@sensor sensor `*.4S358  1 a 1 wreg ]
+"338
+[v Sensor_Scanfrequency_Evaluation@frequency_hop frequency_hop `DC[5]uc  1 s 5 frequency_hop ]
+"344
+"335
+[v Sensor_Scanfrequency_Evaluation@sensor sensor `*.4S358  1 a 1 14 ]
+"385
+} 0
+"221
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2112  1 s 1 Sensor_Acq_ExecutePacket ]
+{
+[s S358 . 9 `DCE2110 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.4S358  1 a 1 wreg ]
+"226
+[v Sensor_Acq_ExecutePacket@error error `E2112  1 a 1 6 ]
+"229
+[v Sensor_Acq_ExecutePacket@ADCON2_temp ADCON2_temp `uc  1 a 1 5 ]
+"228
+[v Sensor_Acq_ExecutePacket@ADCON1_temp ADCON1_temp `uc  1 a 1 4 ]
+"227
+[v Sensor_Acq_ExecutePacket@ADCON0_temp ADCON0_temp `uc  1 a 1 3 ]
+"221
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.4S358  1 a 1 wreg ]
+"226
+"221
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.4S358  1 a 1 7 ]
+"272
+} 0
+"93 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/tmr2.c
+[v _TMR2_StopTimer TMR2_StopTimer `(v  1 e 1 0 ]
+{
+"97
+} 0
+"87
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+{
+"91
+} 0
+"132
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"134
+} 0
+"114
+[v _TMR2_LoadPeriodRegister TMR2_LoadPeriodRegister `(v  1 e 1 0 ]
+{
+[v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 wreg ]
+[v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 wreg ]
+"116
+[v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 0 ]
+"117
+} 0
+"127 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"133
+} 0
+"141 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"146
+} 0
+"148
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E2327  1 a 1 wreg ]
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"150
+[v Button_Service@button button `*.4S750  1 a 1 21 ]
+"148
+[v Button_Service@name name `E2327  1 a 1 wreg ]
+"150
+[v Button_Service@name name `E2327  1 a 1 20 ]
+"158
+} 0
+"509 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2110  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2110  1 a 1 wreg ]
+"511
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2110  1 a 1 5 ]
+"513
+} 0
+"486
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+{
+"490
+} 0
+"179 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.4S750  1 p 1 13 ]
+"210
+} 0
+"160
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.4S750  1 p 1 13 ]
+"178
+} 0
+"211
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.4S750  1 p 1 13 ]
+"227
+} 0
+"397
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+[v Button_DefaultCallback@button button `E2327  1 p 1 0 ]
+} 0
+"363
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.4S750  1 a 1 wreg ]
+[v Button_Baseline_Update@button button `*.4S750  1 a 1 wreg ]
+"365
+"363
+[v Button_Baseline_Update@button button `*.4S750  1 a 1 6 ]
+"377
+} 0
+"357
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.4S750  1 a 1 wreg ]
+[v Button_Baseline_Initialize@button button `*.4S750  1 a 1 wreg ]
+"359
+"357
+[v Button_Baseline_Initialize@button button `*.4S750  1 a 1 12 ]
+"361
+} 0
+"341
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.4S750  1 a 1 wreg ]
+[v Button_Reading_Update@button button `*.4S750  1 a 1 wreg ]
+"343
+"341
+[v Button_Reading_Update@button button `*.4S750  1 a 1 10 ]
+"355
+} 0
+"392 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E2110  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E2110  1 a 1 wreg ]
+"395
+[v MTOUCH_Sensor_RawSample_Get@name name `E2110  1 a 1 7 ]
+"397
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"296 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+[s S750 . 16 `DCE2327 1 name 1 0 `DCE2261 1 sensor 1 1 `E2376 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Deviation_Update@button button `*.4S750  1 a 1 wreg ]
+"298
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 11 ]
+"296
+[v Button_Deviation_Update@button button `*.4S750  1 a 1 wreg ]
+"300
+"296
+[v Button_Deviation_Update@button button `*.4S750  1 a 1 10 ]
+"316
+} 0
+"277
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+{
+[v MTOUCH_Button_isPressed@name name `E2327  1 a 1 wreg ]
+[v MTOUCH_Button_isPressed@name name `E2327  1 a 1 wreg ]
+"280
+[v MTOUCH_Button_isPressed@name name `E2327  1 a 1 1 ]
+"282
+} 0
+"52 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"70
+} 0
+"119 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"129
+} 0
+"285 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+{
+"287
+[v Sensor_Acq_ExecuteScan@result result `us  1 a 2 6 ]
+"288
+[v Sensor_Acq_ExecuteScan@last_a last_a `us  1 s 2 last_a ]
+[v Sensor_Acq_ExecuteScan@last_b last_b `us  1 s 2 last_b ]
+"326
+} 0
+"136 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/tmr2.c
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"139
+} 0
+"1 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\abs.c
+[v i1_abs abs `(i  1 e 2 0 ]
+{
+[v i1abs@a a `i  1 p 2 0 ]
+"4
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@product __bmul `uc  1 a 1 3 ]
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v i1___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
+"131 C:\Users\zhgao\MPLABXProjects\mbutton.X\mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+{
+"188
+} 0
+"62
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+{
+"118
+} 0

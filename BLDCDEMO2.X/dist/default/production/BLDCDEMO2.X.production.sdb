@@ -1,0 +1,499 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1936 ]
+[d frameptr 6 ]
+"73 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\BLDC_Interrupts_Plain.c
+[e E2693 . `uc
+high_res_setup 0
+zero_detect 1
+commutate 2
+]
+"460 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\F1937_Main.c
+[e E2717 . `uc
+high_res_setup 0
+zero_detect 1
+commutate 2
+]
+"110 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\BLDC_Interrupts_Plain.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"101 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\DirectDrivers.c
+[v _Commutate Commutate `(v  1 e 1 0 ]
+[v i1_Commutate Commutate `(v  1 e 1 0 ]
+"112
+[v _set_cmp set_cmp `(v  1 e 1 0 ]
+[v i1_set_cmp set_cmp `(v  1 e 1 0 ]
+"168
+[v _UHoff UHoff `(v  1 e 1 0 ]
+[v i1_UHoff UHoff `(v  1 e 1 0 ]
+"171
+[v _UHon UHon `(v  1 e 1 0 ]
+[v i1_UHon UHon `(v  1 e 1 0 ]
+"174
+[v _ULoff ULoff `(v  1 e 1 0 ]
+[v i1_ULoff ULoff `(v  1 e 1 0 ]
+"177
+[v _ULon ULon `(v  1 e 1 0 ]
+[v i1_ULon ULon `(v  1 e 1 0 ]
+"180
+[v _VHoff VHoff `(v  1 e 1 0 ]
+[v i1_VHoff VHoff `(v  1 e 1 0 ]
+"183
+[v _VHon VHon `(v  1 e 1 0 ]
+[v i1_VHon VHon `(v  1 e 1 0 ]
+"186
+[v _VLoff VLoff `(v  1 e 1 0 ]
+[v i1_VLoff VLoff `(v  1 e 1 0 ]
+"189
+[v _VLon VLon `(v  1 e 1 0 ]
+[v i1_VLon VLon `(v  1 e 1 0 ]
+"192
+[v _WHoff WHoff `(v  1 e 1 0 ]
+[v i1_WHoff WHoff `(v  1 e 1 0 ]
+"195
+[v _WHon WHon `(v  1 e 1 0 ]
+[v i1_WHon WHon `(v  1 e 1 0 ]
+"198
+[v _WLoff WLoff `(v  1 e 1 0 ]
+[v i1_WLoff WLoff `(v  1 e 1 0 ]
+"201
+[v _WLon WLon `(v  1 e 1 0 ]
+[v i1_WLon WLon `(v  1 e 1 0 ]
+"214
+[v _state_drive state_drive `(v  1 e 1 0 ]
+[v i1_state_drive state_drive `(v  1 e 1 0 ]
+"158 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\F1937_Main.c
+[v _main main `(v  1 e 1 0 ]
+"194
+[v _InitSystem InitSystem `(v  1 e 1 0 ]
+"291
+[v _InitDriver InitDriver `(v  1 e 1 0 ]
+"335
+[v _TimeBaseManager TimeBaseManager `(v  1 e 1 0 ]
+"391
+[v _WarmUpControl WarmUpControl `(v  1 e 1 0 ]
+"439
+[v _ControlSlowStart ControlSlowStart `(v  1 e 1 0 ]
+"495
+[v _ControlStartUp ControlStartUp `(v  1 e 1 0 ]
+"530
+[v _StallControl StallControl `(v  1 e 1 0 ]
+"594
+[v _FindTableIndex FindTableIndex `(uc  1 e 1 0 ]
+"606
+[v _GetCCPVal GetCCPVal `(v  1 e 1 0 ]
+"73 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\BLDC_Interrupts_Plain.c
+[v _isr_state isr_state `E2693  1 e 1 0 ]
+"83
+[v _CommOffset CommOffset `i  1 e 2 0 ]
+"801 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1936.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"828
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"848
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"868
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+"1037
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1057
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1222
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1284
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1346
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1594
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1845
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2006
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"2026
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"2394
+[v _CM1CON0 CM1CON0 `VEuc  1 e 1 @273 ]
+"2451
+[v _CM1CON1 CM1CON1 `VEuc  1 e 1 @274 ]
+"4162
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4202
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4468
+[v _PSTR1CON PSTR1CON `VEuc  1 e 1 @662 ]
+"7186
+[v _ANSA0 ANSA0 `VEb  1 e 0 @3168 ]
+"7189
+[v _ANSA1 ANSA1 `VEb  1 e 0 @3169 ]
+"7195
+[v _ANSA3 ANSA3 `VEb  1 e 0 @3171 ]
+"7201
+[v _ANSA5 ANSA5 `VEb  1 e 0 @3173 ]
+"7213
+[v _ANSB3 ANSB3 `VEb  1 e 0 @3179 ]
+"7264
+[v _C1IE C1IE `VEb  1 e 0 @1173 ]
+"7267
+[v _C1IF C1IF `VEb  1 e 0 @149 ]
+"7384
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"7621
+[v _DC1B0 DC1B0 `VEb  1 e 0 @5276 ]
+"7624
+[v _DC1B1 DC1B1 `VEb  1 e 0 @5277 ]
+"7684
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7690
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @1257 ]
+"7843
+[v _LATB6 LATB6 `VEb  1 e 0 @2158 ]
+"7846
+[v _LATB7 LATB7 `VEb  1 e 0 @2159 ]
+"7849
+[v _LATC0 LATC0 `VEb  1 e 0 @2160 ]
+"7852
+[v _LATC1 LATC1 `VEb  1 e 0 @2161 ]
+"7864
+[v _LATC5 LATC5 `VEb  1 e 0 @2165 ]
+"7951
+[v _MC1OUT MC1OUT `VEb  1 e 0 @2216 ]
+"8068
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"8593
+[v _STR1A STR1A `VEb  1 e 0 @5296 ]
+"8596
+[v _STR1B STR1B `VEb  1 e 0 @5297 ]
+"8599
+[v _STR1C STR1C `VEb  1 e 0 @5298 ]
+"8758
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"8779
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1160 ]
+"8782
+[v _TMR1IF TMR1IF `VEb  1 e 0 @136 ]
+"8785
+[v _TMR1ON TMR1ON `VEb  1 e 0 @192 ]
+[s S129 . 12 `[6]*.37(v 1 drive 12 0 ]
+"205 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\DirectDrivers.c
+[v _gateStates gateStates `DC[7]S129  1 s 84 gateStates ]
+"114 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\F1937_Main.c
+[v _comm_state comm_state `uc  1 e 1 0 ]
+[s S47 . 2 `uc 1 low 1 0 `uc 1 high 1 1 ]
+"116
+[u S50 . 2 `i 1 word 2 0 `S47 1 bytes 2 0 ]
+[v _TMR1_comm_time TMR1_comm_time `S50  1 e 2 0 ]
+"118
+[v _slow_start_events slow_start_events `uc  1 e 1 0 ]
+"119
+[v _TMR0_slow_start_timer TMR0_slow_start_timer `uc  1 e 1 0 ]
+"120
+[v _TMR0_startup_timer TMR0_startup_timer `uc  1 e 1 0 ]
+"121
+[v _TMR0_stall_timer TMR0_stall_timer `uc  1 e 1 0 ]
+"122
+[v _TMR0_warmup_timer TMR0_warmup_timer `uc  1 e 1 0 ]
+"123
+[v _TMR0_duty_timer TMR0_duty_timer `uc  1 e 1 0 ]
+"124
+[v _timebase_10ms timebase_10ms `uc  1 e 1 0 ]
+"126
+[v _TMR0_startup_flag TMR0_startup_flag `b  1 e 0 0 ]
+"127
+[v _TMR0_warmup_flag TMR0_warmup_flag `b  1 e 0 0 ]
+"128
+[v _TMR0_slow_start_flag TMR0_slow_start_flag `b  1 e 0 0 ]
+"129
+[v _TMR0_stall_flag TMR0_stall_flag `b  1 e 0 0 ]
+"130
+[v _TMR0_duty_flag TMR0_duty_flag `b  1 e 0 0 ]
+"131
+[v _warmup_complete_flag warmup_complete_flag `b  1 e 0 0 ]
+"132
+[v _startup_complete_flag startup_complete_flag `b  1 e 0 0 ]
+"133
+[v _slow_start_complete_flag slow_start_complete_flag `b  1 e 0 0 ]
+"134
+[v _stop_flag stop_flag `b  1 e 0 0 ]
+"135
+[v _run_flag run_flag `b  1 e 0 0 ]
+"136
+[v _init_complete_flag init_complete_flag `b  1 e 0 0 ]
+"137
+[v _rising_bemf_flag rising_bemf_flag `b  1 e 0 0 ]
+"138
+[v _startup_in_progress startup_in_progress `b  1 e 0 0 ]
+"140
+[v _zc_error zc_error `i  1 e 2 0 ]
+"141
+[v _temp temp `i  1 e 2 0 ]
+"142
+[v _expected_zc expected_zc `S50  1 e 2 0 ]
+"143
+[v _zc zc `S50  1 e 2 0 ]
+"144
+[v _comm_after_zc comm_after_zc `S50  1 e 2 0 ]
+"145
+[v _ramped_speed ramped_speed `uc  1 e 1 0 ]
+"147
+[v _startup_dutycycle startup_dutycycle `uc  1 e 1 0 ]
+"148
+[v _startup_rpm startup_rpm `ui  1 e 2 0 ]
+"92 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\LinearSpeedProfile_16K.c
+[v _CCP_Values CCP_Values `DC[256]i  1 e 512 0 ]
+"158 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\F1937_Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"175
+} 0
+"391
+[v _WarmUpControl WarmUpControl `(v  1 e 1 0 ]
+{
+"420
+} 0
+"291
+[v _InitDriver InitDriver `(v  1 e 1 0 ]
+{
+"312
+} 0
+"606
+[v _GetCCPVal GetCCPVal `(v  1 e 1 0 ]
+{
+[v GetCCPVal@speed speed `uc  1 a 1 wreg ]
+[v GetCCPVal@speed speed `uc  1 a 1 wreg ]
+"608
+[v GetCCPVal@speed speed `uc  1 a 1 7 ]
+"611
+} 0
+"594
+[v _FindTableIndex FindTableIndex `(uc  1 e 1 0 ]
+{
+"598
+[v FindTableIndex@index index `uc  1 a 1 9 ]
+"594
+[v FindTableIndex@duty_cycle duty_cycle `ui  1 p 2 3 ]
+"602
+} 0
+"335
+[v _TimeBaseManager TimeBaseManager `(v  1 e 1 0 ]
+{
+"372
+} 0
+"530
+[v _StallControl StallControl `(v  1 e 1 0 ]
+{
+"592
+} 0
+"194
+[v _InitSystem InitSystem `(v  1 e 1 0 ]
+{
+"273
+} 0
+"495
+[v _ControlStartUp ControlStartUp `(v  1 e 1 0 ]
+{
+"515
+} 0
+"439
+[v _ControlSlowStart ControlSlowStart `(v  1 e 1 0 ]
+{
+"472
+} 0
+"101 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\DirectDrivers.c
+[v _Commutate Commutate `(v  1 e 1 0 ]
+{
+"111
+} 0
+"214
+[v _state_drive state_drive `(v  1 e 1 0 ]
+{
+[v state_drive@state state `uc  1 a 1 wreg ]
+[v state_drive@state state `uc  1 a 1 wreg ]
+[v state_drive@state state `uc  1 a 1 13 ]
+"221
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 7 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 3 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 5 ]
+"53
+} 0
+"198 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\DirectDrivers.c
+[v _WLoff WLoff `(v  1 e 1 0 ]
+{
+"200
+} 0
+"195
+[v _WHon WHon `(v  1 e 1 0 ]
+{
+"197
+} 0
+"192
+[v _WHoff WHoff `(v  1 e 1 0 ]
+{
+"194
+} 0
+"189
+[v _VLon VLon `(v  1 e 1 0 ]
+{
+"191
+} 0
+"186
+[v _VLoff VLoff `(v  1 e 1 0 ]
+{
+"188
+} 0
+"183
+[v _VHon VHon `(v  1 e 1 0 ]
+{
+"185
+} 0
+"180
+[v _VHoff VHoff `(v  1 e 1 0 ]
+{
+"182
+} 0
+"177
+[v _ULon ULon `(v  1 e 1 0 ]
+{
+"179
+} 0
+"174
+[v _ULoff ULoff `(v  1 e 1 0 ]
+{
+"176
+} 0
+"171
+[v _UHon UHon `(v  1 e 1 0 ]
+{
+"173
+} 0
+"168
+[v _UHoff UHoff `(v  1 e 1 0 ]
+{
+"170
+} 0
+"201
+[v _WLon WLon `(v  1 e 1 0 ]
+{
+"203
+} 0
+"112
+[v _set_cmp set_cmp `(v  1 e 1 0 ]
+{
+[v set_cmp@state state `uc  1 a 1 wreg ]
+[v set_cmp@state state `uc  1 a 1 wreg ]
+[v set_cmp@state state `uc  1 a 1 5 ]
+"158
+} 0
+"110 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\BLDC_Interrupts_Plain.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"111
+[v ISR@ctemp ctemp `uc  1 a 1 12 ]
+"279
+} 0
+"101 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\DirectDrivers.c
+[v i1_Commutate Commutate `(v  1 e 1 0 ]
+{
+"111
+} 0
+"214
+[v i1_state_drive state_drive `(v  1 e 1 0 ]
+{
+[v i1state_drive@state state `uc  1 a 1 wreg ]
+[v i1state_drive@state state `uc  1 a 1 wreg ]
+[v i1state_drive@state state `uc  1 a 1 10 ]
+"221
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"198 C:\Users\zhgao\MPLABXProjects\BLDCDEMO2.X\DirectDrivers.c
+[v i1_WLoff WLoff `(v  1 e 1 0 ]
+{
+"200
+} 0
+"195
+[v i1_WHon WHon `(v  1 e 1 0 ]
+{
+"197
+} 0
+"192
+[v i1_WHoff WHoff `(v  1 e 1 0 ]
+{
+"194
+} 0
+"189
+[v i1_VLon VLon `(v  1 e 1 0 ]
+{
+"191
+} 0
+"186
+[v i1_VLoff VLoff `(v  1 e 1 0 ]
+{
+"188
+} 0
+"183
+[v i1_VHon VHon `(v  1 e 1 0 ]
+{
+"185
+} 0
+"180
+[v i1_VHoff VHoff `(v  1 e 1 0 ]
+{
+"182
+} 0
+"177
+[v i1_ULon ULon `(v  1 e 1 0 ]
+{
+"179
+} 0
+"174
+[v i1_ULoff ULoff `(v  1 e 1 0 ]
+{
+"176
+} 0
+"171
+[v i1_UHon UHon `(v  1 e 1 0 ]
+{
+"173
+} 0
+"168
+[v i1_UHoff UHoff `(v  1 e 1 0 ]
+{
+"170
+} 0
+"201
+[v i1_WLon WLon `(v  1 e 1 0 ]
+{
+"203
+} 0
+"112
+[v i1_set_cmp set_cmp `(v  1 e 1 0 ]
+{
+[v i1set_cmp@state state `uc  1 a 1 wreg ]
+[v i1set_cmp@state state `uc  1 a 1 wreg ]
+[v i1set_cmp@state state `uc  1 a 1 2 ]
+"158
+} 0
